@@ -35,7 +35,7 @@ mod tests {
     #[test]
     fn cumulative_sum_test() {
         let a = vec![1, 10, 100, 1000, 10000];
-        let mut cumsum = crate::CumulativeSum::new(a, 0);
+        let mut cumsum = super::CumulativeSum::new(a, 0);
         assert_eq!(cumsum.get(2, 3), 100);
         assert_eq!(cumsum.get(0, 3), 111);
         assert_eq!(cumsum.get(2, 5), 11100);
